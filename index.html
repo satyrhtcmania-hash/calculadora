@@ -172,7 +172,7 @@
         </thead>
         <tbody id="tablaBody"></tbody>
       </table>
-      <div class="note" id="nota"></div>
+      <div class="note" id="nota" style="text-align:center;"></div>
       <button class="whatsapp-btn" onclick="compartirWhatsApp()">📱 Compartir por WhatsApp</button>
     </div>
   </div>
@@ -284,8 +284,8 @@
     `).join('');
 
     document.getElementById('nota').innerHTML = `
-      📐 <strong>Ticket medio:</strong> ${ticket.toFixed(2)} € &nbsp;·&nbsp;
-      🏆 <strong>Mejor tarifa:</strong> ${winner}
+      <strong>Ticket medio:</strong> ${ticket.toFixed(2)} € &nbsp;·&nbsp;
+      <strong>Mejor tarifa:</strong> ${winner}
     `;
   }
 
